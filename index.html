@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <meta charset='UTF-8'>
+  <meta content='width=device-width, initial-scale=1' name='viewport'>
+
+  <title>
+    Mahnoor Digital Services
+  </title>
+
+  <meta content='Personal Blog and Portfolio Website' name='description'>
+
+    <link href='style.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+
+  <!-- ================================
+       NAVIGATION
+  ================================= -->
+
+  <header class='navbar'>
+
+    <div class='nav-container'>
+
+      <a class='logo' href='#home'>
+        My<span>Blog</span>
+      </a>
+
+      <div aria-label='Social media links' class='social-links'>
+
+        <a aria-label='Instagram' href='https://www.instagram.com/_m.ahnoor.graphics_/' rel='noopener noreferrer' target='_blank' title='Instagram'>
+          <svg aria-hidden='true' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2zm0 2A3.2 3.2 0 0 0 4 7.2v9.6A3.2 3.2 0 0 0 7.2 20h9.6a3.2 3.2 0 0 0 3.2-3.2V7.2A3.2 3.2 0 0 0 16.8 4H7.2zm9.55 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z'>
+          </svg>
+        </a>
+
+        <a aria-label='Facebook' href='https://www.facebook.com/MahnoorDigitalServices/' rel='noopener noreferrer' target='_blank' title='Facebook'>
+          <svg aria-hidden='true' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M13.5 22v-8h2.75l.5-3h-3.25V9.05c0-.87.24-1.55 1.58-1.55h1.67V4.82c-.29-.04-1.29-.12-2.45-.12-2.43 0-4.1 1.48-4.1 4.2V11H7.45v3h2.75v8h3.3z'>
+          </svg>
+        </a>
+
+      </div>
+
+      <div class='menu-toggle' onclick='toggleMenu()'>
+        &#9776;
+      </div>
+
+      <ul class='nav-menu' id='navMenu'>
+
+        <li>
+          <a href='#home' onclick='closeMenu()'>Home</a>
+        </li>
+
+        <li>
+          <a href='#about' onclick='closeMenu()'>About Me</a>
+        </li>
+
+        <li>
+          <a href='#services' onclick='closeMenu()'>Services</a>
+        </li>
+
+        <li>
+          <a href='#portfolio' onclick='closeMenu()'>Portfolio</a>
+        </li>
+
+        <li>
+          <a class='nav-button' href='#contact' onclick='closeMenu()'>Contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================================
+       HOME / CAROUSEL
+  ================================= -->
+
+  <main>
+
+    <section class='hero' id='home'>
+
+      <div class='carousel'>
+
+        <div class='slide active'>
+
+          <img alt='Creative workspace' src='https://images.unsplash.com/photo-1499750310107-5fef28a66643'>
+
+          <div class='slide-overlay'>
+
+          <div class='slide-content'>
+
+            <div class='small-title'>
+              Welcome to my website
+            </div>
+
+            <h1>
+              Creativity That Turns Ideas Into Reality
+            </h1>
+
+            <p>
+              Explore my work, services, projects and creative journey.
+            </p>
+
+            <a class='hero-button' href='#about'>
+              Explore More
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class='slide'>
+
+          <img alt='Creative design' src='https://images.unsplash.com/photo-1545235617-9465d2a55698'>
+
+          <div class='slide-overlay'>
+
+          <div class='slide-content'>
+
+            <div class='small-title'>
+              Creative Design
+            </div>
+
+            <h1>
+              Modern Designs With A Personal Touch
+            </h1>
+
+            <p>
+              Discover creative projects, visual designs and digital ideas.
+            </p>
+
+            <a class='hero-button' href='#services'>
+              View Services
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class='slide'>
+
+          <img alt='Laptop and workspace' src='https://images.unsplash.com/photo-1496181133206-80ce9b88a853'>
+
+          <div class='slide-overlay'>
+
+          <div class='slide-content'>
+
+            <div class='small-title'>
+              Digital World
+            </div>
+
+            <h1>
+              Building Something Better Every Day
+            </h1>
+
+            <p>
+              Follow my projects, experiments and digital journey.
+            </p>
+
+            <a class='hero-button' href='#portfolio'>
+              See Portfolio
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <button class='carousel-arrow prev' onclick='changeSlide(-1)' type='button'>
+          &#10094;
+        </button>
+
+        <button class='carousel-arrow next' onclick='changeSlide(1)' type='button'>
+          &#10095;
+        </button>
+
+
+        <div class='dots'>
+
+          <span class='dot active' onclick='currentSlide(0)'>
+
+          <span class='dot' onclick='currentSlide(1)'>
+
+          <span class='dot' onclick='currentSlide(2)'>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         ABOUT ME
+    ================================= -->
+
+    <section class='section about' id='about'>
+
+      <div class='container'>
+
+        <div class='section-title'>
+
+          <div class='subtitle'>
+            Get To Know Me
+          </div>
+
+          <h2>
+            About Me
+          </h2>
+
+          <p>
+            A little introduction about who I am and what I love creating.
+          </p>
+
+        </div>
+
+
+        <div class='about-grid'>
+
+          <div class='about-image'>
+
+            <img alt='About me' src='https://images.unsplash.com/photo-1499750310107-5fef28a66643'>
+
+          </div>
+
+
+          <div class='about-content'>
+
+            <h3>
+              Turning Ideas Into Creative Work
+            </h3>
+
+            <p>
+              Welcome to my personal website. I enjoy learning,
+              creating and exploring new ideas in the digital world.
+            </p>
+
+            <p>
+              This website is a place where I can share my work,
+              projects, services and experiences.
+            </p>
+
+            <ul class='about-list'>
+
+              <li>
+                <span>&#10003;</span>
+                Creative and modern approach
+              </li>
+
+              <li>
+                <span>&#10003;</span>
+                Focus on clean and professional work
+              </li>
+
+              <li>
+                <span>&#10003;</span>
+                Constantly learning new skills
+              </li>
+
+              <li>
+                <span>&#10003;</span>
+                Passion for digital creativity
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         SERVICES
+    ================================= -->
+
+    <section class='section services' id='services'>
+
+      <div class='container'>
+
+        <div class='section-title'>
+
+          <div class='subtitle'>
+            What I Do
+          </div>
+
+          <h2>
+            My Services
+          </h2>
+
+          <p>
+            Creative and digital services designed to bring your ideas to life.
+          </p>
+
+        </div>
+
+
+        <div class='service-grid'>
+
+          <div class='service-card'>
+
+            <div class='service-image'>
+
+              <img alt='Web design' src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d'>
+
+            </div>
+
+            <div class='service-content'>
+
+              <h3>
+                Web Designing
+              </h3>
+
+              <p>
+                Modern, responsive and user-friendly websites
+                for personal brands and businesses.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class='service-card'>
+
+            <div class='service-image'>
+
+              <img alt='Graphic design' src='https://images.unsplash.com/photo-1561070791-2526d30994b5'>
+
+            </div>
+
+            <div class='service-content'>
+
+              <h3>
+                Graphic Designing
+              </h3>
+
+              <p>
+                Creative graphics, promotional designs,
+                social media posts and visual content.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class='service-card'>
+
+            <div class='service-image'>
+
+              <img alt='Branding' src='https://images.unsplash.com/photo-1558655146-d09347e92766'>
+
+            </div>
+
+            <div class='service-content'>
+
+              <h3>
+                Logo &amp; Branding
+              </h3>
+
+              <p>
+                Professional logos and branding concepts
+                that create a strong visual identity.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class='service-card'>
+
+            <div class='service-image'>
+
+              <img alt='Social media design' src='https://images.unsplash.com/photo-1611162617474-5b21e879e113'>
+
+            </div>
+
+            <div class='service-content'>
+
+              <h3>
+                Social Media Design
+              </h3>
+
+              <p>
+                Attractive posts, banners and promotional
+                content for social media platforms.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class='service-card'>
+
+            <div class='service-image'>
+
+              <img alt='UI UX design' src='https://images.unsplash.com/photo-1559028012-481c04fa702d'>
+
+            </div>
+
+            <div class='service-content'>
+
+              <h3>
+                UI / UX Design
+              </h3>
+
+              <p>
+                Clean interfaces and thoughtful user
+                experiences for digital products.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class='service-card'>
+
+            <div class='service-image'>
+
+              <img alt='Digital services' src='https://images.unsplash.com/photo-1553877522-43269d4ea984'>
+
+            </div>
+
+            <div class='service-content'>
+
+              <h3>
+                Digital Services
+              </h3>
+
+              <p>
+                Digital solutions and creative support
+                for personal and business projects.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         PORTFOLIO
+    ================================= -->
+
+    <section class='section portfolio' id='portfolio'>
+
+      <div class='container'>
+
+        <div class='section-title'>
+
+          <div class='subtitle'>
+            My Work
+          </div>
+
+          <h2>
+            Portfolio
+          </h2>
+
+          <p>
+            A selection of creative projects and digital work.
+          </p>
+
+        </div>
+
+
+        <div class='portfolio-grid'>
+
+          <div class='portfolio-item'>
+
+            <img alt='Website Design' src='https://images.unsplash.com/photo-1547658719-da2b51169166'>
+
+            <div class='portfolio-overlay'>
+              <h3>Website Design</h3>
+            </div>
+
+          </div>
+
+
+          <div class='portfolio-item'>
+
+            <img alt='Graphic Design' src='https://images.unsplash.com/photo-1561070791-2526d30994b5'>
+
+            <div class='portfolio-overlay'>
+              <h3>Graphic Design</h3>
+            </div>
+
+          </div>
+
+
+          <div class='portfolio-item'>
+
+            <img alt='Brand Identity' src='https://images.unsplash.com/photo-1558655146-d09347e92766'>
+
+            <div class='portfolio-overlay'>
+              <h3>Brand Identity</h3>
+            </div>
+
+          </div>
+
+
+          <div class='portfolio-item'>
+
+            <img alt='Social Media Design' src='https://images.unsplash.com/photo-1611162617474-5b21e879e113'>
+
+            <div class='portfolio-overlay'>
+              <h3>Social Media</h3>
+            </div>
+
+          </div>
+
+
+          <div class='portfolio-item'>
+
+            <img alt='UI UX Design' src='https://images.unsplash.com/photo-1559028012-481c04fa702d'>
+
+            <div class='portfolio-overlay'>
+              <h3>UI / UX</h3>
+            </div>
+
+          </div>
+
+
+          <div class='portfolio-item'>
+
+            <img alt='Creative Project' src='https://images.unsplash.com/photo-1497215728101-856f4ea42174'>
+
+            <div class='portfolio-overlay'>
+              <h3>Creative Project</h3>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         CONTACT
+    ================================= -->
+
+    <section class='section contact' id='contact'>
+
+      <div class='container'>
+
+        <div class='contact-box'>
+
+          <h2>
+            Let&#39;s Work Together
+          </h2>
+
+          <p>
+            Have a project, idea or question? Get in touch
+            with me directly on WhatsApp.
+          </p>
+
+          <!-- WHATSAPP BUTTON -->
+
+          <a class='contact-button' href='https://wa.me/923113076588' rel='noopener noreferrer' target='_blank'>
+
+            Contact Me on WhatsApp
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================================
+       FLOATING WHATSAPP & GMAIL BUTTONS
+  ================================= -->
+
+  <div class='floating-contact-buttons'>
+
+    <button aria-label='Contact me on WhatsApp' class='floating-contact-button floating-whatsapp' onclick='openLeadForm(&quot;whatsappLeadModal&quot;)' title='WhatsApp' type='button'>
+      <svg aria-hidden='true' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path d='M20.52 3.48A11.88 11.88 0 0 0 12.05 0C5.48 0.03.14 5.37.12 11.94c0 2.1.55 4.15 1.59 5.95L0 24l6.27-1.65a11.88 11.88 0 0 0 5.77 1.47h.01c6.56 0 11.9-5.34 11.92-11.9a11.84 11.84 0 0 0-3.45-8.44zM12.05 21.8h-.01a9.85 9.85 0 0 1-5.02-1.38l-.36-.21-3.72.98.99-3.63-.23-.37a9.87 9.87 0 0 1-1.51-5.25C2.2 6.5 6.61 2.1 12.06 2.1a9.83 9.83 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.88 7c-.02 5.44-4.44 9.8-9.88 9.8zm5.42-7.37c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.21 5.09 4.5.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z'>
+      </svg>
+    </button>
+
+    <button aria-label='Send me an email' class='floating-contact-button floating-gmail' onclick='openLeadForm(&quot;gmailLeadModal&quot;)' title='Email' type='button'>
+      <svg aria-hidden='true' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path d='M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z'>
+      </svg>
+    </button>
+
+  </div>
+
+  <!-- ================================
+       WHATSAPP LEAD FORM
+  ================================= -->
+
+  <div aria-hidden='true' aria-labelledby='whatsappLeadTitle' class='lead-modal' id='whatsappLeadModal' role='dialog'>
+    <div class='lead-form-box' role='document'>
+
+      <button aria-label='Close form' class='lead-form-close' onclick='closeLeadForm(&quot;whatsappLeadModal&quot;)' type='button'>&#215;</button>
+
+      <h3 id='whatsappLeadTitle'>Contact Me on WhatsApp</h3>
+      <p class='lead-subtitle'>Fill in your details and your message will be prepared for WhatsApp.</p>
+
+      <form onsubmit='submitWhatsAppLead(event)'>
+
+        <div class='lead-form-group'>
+          <label for='waName'>Name *</label>
+          <input id='waName' name='name' required='required' type='text'>
+        </div>
+
+        <div class='lead-form-group'>
+          <label for='waEmail'>Email *</label>
+          <input id='waEmail' name='email' required='required' type='email'>
+        </div>
+
+        <div class='lead-form-group'>
+          <label for='waPhone'>Phone / WhatsApp Number *</label>
+          <input id='waPhone' name='phone' required='required' type='tel'>
+        </div>
+
+        <div class='lead-form-group'>
+          <label for='waService'>Service Interested In</label>
+          <select id='waService' name='service'>
+            <option value='Web Designing'>Web Designing</option>
+            <option value='Graphic Designing'>Graphic Designing</option>
+            <option value='Logo &amp; Branding'>Logo &amp; Branding</option>
+            <option value='Social Media Design'>Social Media Design</option>
+            <option value='UI / UX Design'>UI / UX Design</option>
+            <option value='Digital Services'>Digital Services</option>
+            <option value='Other'>Other</option>
+          </select>
+        </div>
+
+        <div class='lead-form-group'>
+          <label for='waMessage'>Message</label>
+          <textarea id='waMessage' name='message' placeholder='Tell me briefly about your project...'>
+        </div>
+
+        <button class='lead-form-submit whatsapp-submit' type='submit'>Continue to WhatsApp</button>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- ================================
+       GMAIL LEAD FORM
+  ================================= -->
+
+  <div aria-hidden='true' aria-labelledby='gmailLeadTitle' class='lead-modal' id='gmailLeadModal' role='dialog'>
+    <div class='lead-form-box' role='document'>
+
+      <button aria-label='Close form' class='lead-form-close' onclick='closeLeadForm(&quot;gmailLeadModal&quot;)' type='button'>&#215;</button>
+
+      <h3 id='gmailLeadTitle'>Send Me an Email</h3>
+      <p class='lead-subtitle'>Fill in your details and your email app will open with the lead information prepared.</p>
+
+      <form onsubmit='submitGmailLead(event)'>
+
+        <div class='lead-form-group'>
+          <label for='gmailName'>Name *</label>
+          <input id='gmailName' name='name' required='required' type='text'>
+        </div>
+
+        <div class='lead-form-group'>
+          <label for='gmailEmail'>Email *</label>
+          <input id='gmailEmail' name='email' required='required' type='email'>
+        </div>
+
+        <div class='lead-form-group'>
+          <label for='gmailPhone'>Phone / WhatsApp Number *</label>
+          <input id='gmailPhone' name='phone' required='required' type='tel'>
+        </div>
+
+        <div class='lead-form-group'>
+          <label for='gmailService'>Service Interested In</label>
+          <select id='gmailService' name='service'>
+            <option value='Web Designing'>Web Designing</option>
+            <option value='Graphic Designing'>Graphic Designing</option>
+            <option value='Logo &amp; Branding'>Logo &amp; Branding</option>
+            <option value='Social Media Design'>Social Media Design</option>
+            <option value='UI / UX Design'>UI / UX Design</option>
+            <option value='Digital Services'>Digital Services</option>
+            <option value='Other'>Other</option>
+          </select>
+        </div>
+
+        <div class='lead-form-group'>
+          <label for='gmailMessage'>Message</label>
+          <textarea id='gmailMessage' name='message' placeholder='Tell me briefly about your project...'>
+        </div>
+
+        <button class='lead-form-submit gmail-submit' type='submit'>Continue to Email</button>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- ================================
+       FOOTER
+  ================================= -->
+
+  <footer>
+
+    <div class='container'>
+
+      <div class='footer-content'>
+
+        <div>
+
+          <h3>
+            MyBlog
+          </h3>
+
+          <p>
+            A creative personal website for sharing ideas,
+            projects, services and digital work.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Quick Links
+          </h3>
+
+          <ul>
+
+            <li>
+              <a href='#home'>Home</a>
+            </li>
+
+            <li>
+              <a href='#about'>About Me</a>
+            </li>
+
+            <li>
+              <a href='#services'>Services</a>
+            </li>
+
+            <li>
+              <a href='#portfolio'>Portfolio</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Contact
+          </h3>
+
+          <ul>
+
+            <li>
+              WhatsApp: 03113076588
+            </li>
+
+            <li>
+              Location: Pakistan
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class='footer-bottom'>
+
+        &#169; 2026 MyBlog. All Rights Reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Hidden Blogger section kept for Blogger template compatibility -->
+  
+
+
+  <!-- ================================
+       JAVASCRIPT
+  ================================= -->
+
+  <script type='text/javascript'>
+  //<![CDATA[
+
+  var slideIndex = 0;
+  var slides = document.getElementsByClassName('slide');
+  var dots = document.getElementsByClassName('dot');
+
+  function showSlide(index) {
+
+    if (index >= slides.length) {
+      slideIndex = 0;
+    }
+
+    if (index < 0) {
+      slideIndex = slides.length - 1;
+    }
+
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].classList.remove('active');
+    }
+
+    for (var j = 0; j < dots.length; j++) {
+      dots[j].classList.remove('active');
+    }
+
+    slides[slideIndex].classList.add('active');
+    dots[slideIndex].classList.add('active');
+  }
+
+
+  function changeSlide(direction) {
+
+    slideIndex = slideIndex + direction;
+
+    showSlide(slideIndex);
+  }
+
+
+  function currentSlide(index) {
+
+    slideIndex = index;
+
+    showSlide(slideIndex);
+  }
+
+
+  setInterval(function() {
+
+    slideIndex++;
+
+    showSlide(slideIndex);
+
+  }, 5000);
+
+
+  function openLeadForm(modalId) {
+
+    var modal = document.getElementById(modalId);
+
+    if (modal) {
+      modal.classList.add('active');
+      modal.setAttribute('aria-hidden', 'false');
+
+      var firstInput = modal.querySelector('input');
+
+      if (firstInput) {
+        setTimeout(function() {
+          firstInput.focus();
+        }, 100);
+      }
+
+      document.body.style.overflow = 'hidden';
+    }
+
+  }
+
+
+  function closeLeadForm(modalId) {
+
+    var modal = document.getElementById(modalId);
+
+    if (modal) {
+      modal.classList.remove('active');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    var waModal = document.getElementById('whatsappLeadModal');
+    var gmailModal = document.getElementById('gmailLeadModal');
+
+    if ((!waModal || !waModal.classList.contains('active')) &&
+        (!gmailModal || !gmailModal.classList.contains('active'))) {
+      document.body.style.overflow = '';
+    }
+
+  }
+
+
+  function submitWhatsAppLead(event) {
+
+    event.preventDefault();
+
+    var name = document.getElementById('waName').value.trim();
+    var email = document.getElementById('waEmail').value.trim();
+    var phone = document.getElementById('waPhone').value.trim();
+    var service = document.getElementById('waService').value;
+    var message = document.getElementById('waMessage').value.trim();
+
+    var whatsappMessage =
+      'Hello Mahnoor Digital Services,%0A%0A' +
+      'I would like to inquire about your services.%0A%0A' +
+      'Name: ' + encodeURIComponent(name) + '%0A' +
+      'Email: ' + encodeURIComponent(email) + '%0A' +
+      'Phone / WhatsApp: ' + encodeURIComponent(phone) + '%0A' +
+      'Service: ' + encodeURIComponent(service) + '%0A' +
+      'Message: ' + encodeURIComponent(message);
+
+    var whatsappUrl = 'https://wa.me/923113076588?text=' + whatsappMessage;
+
+    closeLeadForm('whatsappLeadModal');
+    window.open(whatsappUrl, '_blank');
+
+  }
+
+
+  function submitGmailLead(event) {
+
+    event.preventDefault();
+
+    var name = document.getElementById('gmailName').value.trim();
+    var email = document.getElementById('gmailEmail').value.trim();
+    var phone = document.getElementById('gmailPhone').value.trim();
+    var service = document.getElementById('gmailService').value;
+    var message = document.getElementById('gmailMessage').value.trim();
+
+    var subject = 'New Website Lead - ' + service;
+
+    var body =
+      'Hello Mahnoor,%0A%0A' +
+      'A new lead has contacted you through your website.%0A%0A' +
+      'Name: ' + encodeURIComponent(name) + '%0A' +
+      'Email: ' + encodeURIComponent(email) + '%0A' +
+      'Phone / WhatsApp: ' + encodeURIComponent(phone) + '%0A' +
+      'Service: ' + encodeURIComponent(service) + '%0A' +
+      'Message: ' + encodeURIComponent(message);
+
+    var mailtoUrl =
+      'mailto:mahnoor6060shaikh@gmail.com?subject=' +
+      encodeURIComponent(subject) +
+      '&body=' +
+      body;
+
+    closeLeadForm('gmailLeadModal');
+    window.location.href = mailtoUrl;
+
+  }
+
+
+  document.addEventListener('click', function(event) {
+
+    if (event.target.classList.contains('lead-modal')) {
+      closeLeadForm(event.target.id);
+    }
+
+  });
+
+
+  document.addEventListener('keydown', function(event) {
+
+    if (event.key === 'Escape') {
+      closeLeadForm('whatsappLeadModal');
+      closeLeadForm('gmailLeadModal');
+    }
+
+  });
+
+
+  function toggleMenu() {
+
+    var menu = document.getElementById('navMenu');
+
+    menu.classList.toggle('active');
+
+  }
+
+
+  function closeMenu() {
+
+    var menu = document.getElementById('navMenu');
+
+    menu.classList.remove('active');
+
+  }
+
+  //]]>
+  </script>
+
+</body>
+
+</html>
